@@ -1,0 +1,24 @@
+ {
+    "name": "Wikidot Markdown Extension",
+    "description" : "A Chrome Extension for Wikidot Edit Markdown support.",
+    "version": "1.0",
+    "manifest_version": 2, 
+    "browser_action": {
+      "default_popup": "popup_login.html",
+      "default_icon": "picture/default_icon.png"
+    },
+    "permissions": [
+    "activeTab",
+    "storage",
+    "cookies",
+    "*://*.wikidot.com/",
+    "*://wikidot.com/"
+    ],
+    "content_scripts": [
+     {
+       "matches": ["*://*.wikidot.com/*"],
+       "css": ["css/inject_editor.css"],
+       "js": ["inject_editor.js"]
+     }
+    ]
+}
