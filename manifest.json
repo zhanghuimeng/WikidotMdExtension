@@ -11,6 +11,7 @@
     "activeTab",
     "storage",
     "cookies",
+    "tabs",
     "*://*.wikidot.com/",
     "*://wikidot.com/"
     ],
@@ -20,5 +21,8 @@
        "css": ["css/inject_editor.css"],
        "js": ["inject_editor.js"]
      }
-    ]
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    }
 }
