@@ -1,4 +1,5 @@
-# Introduction
+[![Build Status](https://travis-ci.org/zhanghuimeng/WikidotMdExtension.svg?branch=master)](https://travis-ci.org/zhanghuimeng/WikidotMdExtension)
+
 This is a Chrome Extension for [http://www.wikidot.com](http://www.wikidot.com). The main function is to add markdown edit and parse support for [http://www.wikidot.com](http://www.wikidot.com).
 
 # TODO
