@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Tue Feb 06 2018 21:26:45 GMT+0800 (中国标准时间)
+// Generated on Tue Feb 06 2018 21:37:03 GMT+0800 (中国标准时间)
 
 module.exports = function(config) {
   config.set({
@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      {pattern: 'unit_test/*.js', included: false}
+      'unit_test/*.js'
     ],
 
 
