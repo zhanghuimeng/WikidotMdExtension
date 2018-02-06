@@ -13,7 +13,8 @@
     "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^1.1.1",
     "karma-phantomjs-launcher": "*",
-    "karma-requirejs": "^1.1.0"
+    "karma-requirejs": "^1.1.0",
+    "requirejs": "*"
   },
   "main": "background.js",
   "repository": {
