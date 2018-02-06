@@ -7,3 +7,9 @@ before_install:
     - sh -e /etc/init.d/xvfb start
 before_script:
     - npm install
+    - "sudo chown root /opt/google/chrome/chrome-sandbox"
+    - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
+sudo: required
+dist: trusty
+addons:
+    chrome: stable
