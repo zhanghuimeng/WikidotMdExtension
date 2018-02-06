@@ -22,6 +22,9 @@ module.exports = function(config) {
 
     // list of files / patterns to exclude
     exclude: [
+        'background.js',
+        'inject_editor.js',
+        'popup.js'
     ],
 
 
