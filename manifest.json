@@ -4,7 +4,7 @@
     "version": "1.0",
     "manifest_version": 2, 
     "browser_action": {
-      "default_popup": "popup_login.html",
+      "default_popup": "popup.html",
       "default_icon": "picture/default_icon.png"
     },
     "permissions": [
@@ -15,6 +15,7 @@
     "*://*.wikidot.com/",
     "*://wikidot.com/"
     ],
+   "options_page": "options.html",
     "content_scripts": [
      {
        "matches": ["*://*.wikidot.com/*"],

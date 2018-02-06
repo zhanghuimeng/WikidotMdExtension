@@ -1,0 +1,16 @@
+{
+  "name": "WikidotMdExtension",
+  "description": "A Chrome Extension for wikidot.com Markdown support.",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "karma start tests/karma.conf.js --single-run"
+  },
+  "devDependencies": {
+    "jasmine-core": "*",
+    "karma": "*",
+    "karma-cli": "*",
+    "karma-jasmine": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-chrome-launcher": "*"
+  }
+}
