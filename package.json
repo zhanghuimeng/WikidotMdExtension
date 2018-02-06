@@ -1,5 +1,5 @@
 {
-  "name": "WikidotMdExtension",
+  "name": "wikidotmdextension",
   "description": "A Chrome Extension for wikidot.com Markdown support.",
   "version": "0.0.0",
   "scripts": {
@@ -7,10 +7,27 @@
   },
   "devDependencies": {
     "jasmine-core": "*",
-    "karma": "*",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "*",
     "karma-cli": "*",
-    "karma-jasmine": "*",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.1",
     "karma-phantomjs-launcher": "*",
-    "karma-chrome-launcher": "*"
-  }
+    "karma-requirejs": "^1.1.0"
+  },
+  "main": "background.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhanghuimeng/WikidotMdExtension.git"
+  },
+  "keywords": [
+    "Wikidot",
+    "Markdown"
+  ],
+  "author": "Zhang Huimeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhanghuimeng/WikidotMdExtension/issues"
+  },
+  "homepage": "https://github.com/zhanghuimeng/WikidotMdExtension#readme"
 }
