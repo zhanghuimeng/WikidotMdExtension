@@ -16,18 +16,18 @@ function change_icon(url, tabId) {
     var domain;
     domain = extractRootDomain(url).toString();
 
-    // console.log("current tab url: " + url);
-    // console.log("domain: " + domain);
+    console.log("current tab url: " + url);
+    console.log("domain: " + domain);
 
     if (domain !== "wikidot.com") {
         chrome.browserAction.setIcon({
-            "path": "/picture/default_icon.png",
+            "path": "../picture/default_icon.png",
             "tabId": tabId
         });
     }
     else {
         chrome.browserAction.setIcon({
-            "path": "/picture/activated_icon.png",
+            "path": "../picture/activated_icon.png",
             "tabId": tabId
         });
     }

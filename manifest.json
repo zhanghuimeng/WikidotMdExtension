@@ -24,6 +24,9 @@
      }
     ],
     "background": {
-      "scripts": ["js/background.js"]
+      "scripts": [
+        "js/background_commons.js",
+        "js/background.js"
+      ]
     }
 }

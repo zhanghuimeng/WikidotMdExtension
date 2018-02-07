@@ -3,9 +3,11 @@
   "description": "A Chrome Extension for wikidot.com Markdown support.",
   "version": "0.0.0",
   "scripts": {
-    "test": "karma start karma.conf.js --single-run"
+    "test": "karma start karma.conf.js"
   },
   "devDependencies": {
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
     "jasmine-core": "*",
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",

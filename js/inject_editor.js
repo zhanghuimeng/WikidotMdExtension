@@ -18,7 +18,7 @@ window.onload = function () {
 };
 
 function startEditing() {
-    
+
 }
 
 function stopEditing() {
