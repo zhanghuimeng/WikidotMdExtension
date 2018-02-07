@@ -16,15 +16,16 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'test/*.js',
-      '*.js'
+      'js/*.js'
     ],
 
 
     // list of files / patterns to exclude
     exclude: [
-        'background.js',
-        'inject_editor.js',
-        'popup.js'
+        'js/background.js',
+        'js/inject_editor.js',
+        'js/popup.js',
+        'js/options.js'
     ],
 
 
