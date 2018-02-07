@@ -20,10 +20,10 @@
      {
        "matches": ["*://*.wikidot.com/*"],
        "css": ["css/inject_editor.css"],
-       "js": ["inject_editor.js"]
+       "js": ["js/inject_editor.js"]
      }
     ],
     "background": {
-      "scripts": ["background.js"]
+      "scripts": ["js/background.js"]
     }
 }

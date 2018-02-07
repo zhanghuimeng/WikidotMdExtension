@@ -13,10 +13,16 @@ function getCookies(domain, name)
             document.getElementById("logged_info").style.display = "none";
         }
     });
-
-    return cookie.value;
 }
 
 window.onload = function () {
     getCookies("http://wikidot.com", "WIKIDOT_SESSION_ID");
+
+    // set onclick
+    document.getElementById("mnuSettings").onclick = function () {
+        chrome.runtime.openOptionsPage();
+    };
+    document.getElementById("mnuAbout").onclick = function () {
+        chrome.tabs.create({active: true, url: "https://github.com/zhanghuimeng/WikidotMdExtension"});
+    };
 };

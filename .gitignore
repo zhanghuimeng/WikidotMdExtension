@@ -111,4 +111,5 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-.idea\workspace.xml
+\.idea\workspace.xml
+.idea/workspace.xml
