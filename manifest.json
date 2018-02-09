@@ -19,13 +19,13 @@
     "content_scripts": [
      {
        "matches": ["*://*.wikidot.com/*"],
-       "css": ["css/inject_editor.css"],
-       "js": ["js/inject_editor.js"]
+       "css": ["css/inject_editor.css", "css/LiveEditor.css"],
+       "js": ["js/inject_editor.js", "js/LiveEditor.js", "js/commons.js"]
      }
     ],
     "background": {
       "scripts": [
-        "js/background_commons.js",
+        "js/commons.js",
         "js/background.js"
       ]
     }

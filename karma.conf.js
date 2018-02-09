@@ -3,7 +3,7 @@ module.exports = function (config) {
         basePath: '',
         frameworks: ['jasmine'],
         files: [
-            'js/background_commons.js',
+            'js/commons.js',
             'test/*.js'
         ],
         preprocessors: {

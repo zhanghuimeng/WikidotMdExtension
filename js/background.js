@@ -1,3 +1,5 @@
+var isWikidot = false;
+
 // Change the icon when the active tab belongs to wikidot
 chrome.tabs.onActivated.addListener(function (activeInfo) {
     console.log("Tab changed");
@@ -6,6 +8,7 @@ chrome.tabs.onActivated.addListener(function (activeInfo) {
         currentWindow: true
     }, function (tabs) {
         var tab = tabs[0];
+        tabId = tab;
         change_icon(tab.url, tab.id);
     });
 });
@@ -24,11 +27,13 @@ function change_icon(url, tabId) {
             "path": "../picture/default_icon.png",
             "tabId": tabId
         });
+        isWikidot = false;
     }
     else {
         chrome.browserAction.setIcon({
             "path": "../picture/activated_icon.png",
             "tabId": tabId
         });
+        isWikidot = true;
     }
 }

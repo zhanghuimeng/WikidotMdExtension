@@ -1,0 +1,25 @@
+#wme-live-editor {
+    display: none;
+}
+
+#wme-editor {
+    display: flex;
+    height: 100vh;
+    min-height: 200px;
+}
+
+.wme-left, .wme-right {
+    margin: 10px;
+    flex: 1 1 auto;
+    border: 1px solid gray;
+    width: 45%;
+}
+
+.wme-text-input {
+    box-sizing: border-box;
+    vertical-align: top;
+    overflow: auto;
+    resize: none;
+    height: 100%;
+    width: 100%;
+}
