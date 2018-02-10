@@ -2,9 +2,20 @@ var isWikidot = false;
 console.log("Chrome: ");
 console.log(window.chrome);
 
+chrome.tabs.onUpdated.addListener(function (tabId , info) {
+    if (info.status === 'complete') {
+        console.log("Tab updated");
+        queryCurrentTab();
+    }
+});
+
 // Change the icon when the active tab belongs to wikidot
 chrome.tabs.onActivated.addListener(function (activeInfo) {
     console.log("Tab changed");
+    queryCurrentTab();
+});
+
+function queryCurrentTab() {
     chrome.tabs.query({
         active: true,
         currentWindow: true
@@ -13,7 +24,7 @@ chrome.tabs.onActivated.addListener(function (activeInfo) {
         tabId = tab;
         change_icon(tab.url, tab.id);
     });
-});
+}
 
 // change icon
 function change_icon(url, tabId) {
