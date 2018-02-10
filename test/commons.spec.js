@@ -30,4 +30,9 @@ describe("Test suites for extractRootDomain()", function() {
         let hostname = extractRootDomain("http://ilovestudy.wikidot.com");
         expect(hostname).toEqual("wikidot.com");
     });
+
+    it("Test extractRootDomain() with sub ccTLD", function() {
+        let hostname = extractRootDomain("http://www.google.com.hk");
+        expect(hostname).toEqual("google.com.hk");
+    });
 });

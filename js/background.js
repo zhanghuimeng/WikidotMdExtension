@@ -1,4 +1,6 @@
 var isWikidot = false;
+console.log("Chrome: ");
+console.log(window.chrome);
 
 // Change the icon when the active tab belongs to wikidot
 chrome.tabs.onActivated.addListener(function (activeInfo) {

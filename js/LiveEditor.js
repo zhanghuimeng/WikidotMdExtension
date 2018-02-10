@@ -1,21 +1,18 @@
 var lastUpdatedPreviewTime = 0;
 
-if (window.onload == null) {
-    window.onload = waitForElementToDisplay();
+// Add onload listener
+if (window.addEventListener) {
+    window.addEventListener('load', registerTextChangeListener, false);
+}
+else if (window.attachEvent) // Microsoft
+{
+    window.attachEvent('onload', registerTextChangeListener());
 }
 
-function waitForElementToDisplay(selector, time) {
-    if (document.querySelector(selector) != null) {
-        console.log("The element is displayed, you can put your code instead of this alert.");
-        var textarea = document.getElementById("wme-text-input");
-        textarea.addEventListener("keyup", onTextChange());
-        return;
-    }
-    else {
-        setTimeout(function() {
-            waitForElementToDisplay(selector, time);
-        }, time);
-    }
+// Add text change listener
+function registerTextChangeListener() {
+    var textarea = document.getElementById("wme-text-input");
+    textarea.addEventListener("keyup", onTextChange());
 }
 
 function onTextChange() {

@@ -18,7 +18,12 @@
     "karma-jasmine": "^1.1.1",
     "karma-phantomjs-launcher": "*",
     "karma-requirejs": "^1.1.0",
-    "requirejs": "*"
+    "karma-sinon-chrome": "^0.2.0",
+    "karma-webpack": "^2.0.9",
+    "requirejs": "*",
+    "sinon": "^4.2.2",
+    "sinon-chrome": "^2.2.4",
+    "webpack": "^3.10.0"
   },
   "main": "background.js",
   "repository": {
