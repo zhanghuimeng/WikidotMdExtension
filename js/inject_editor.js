@@ -1,11 +1,10 @@
 isEditing = false;
 isWikidot = false;
+var intFetchPreview;
 
 // add listeners
 window.onload = function () {
     console.log("Hello extension!");
-
-    waitForElementToDisplay("#wme-text-input", 200);
 
     getIsWikidot();
     console.log("IsWikidot: " + isWikidot);
@@ -75,7 +74,10 @@ function insertNewActArea() {
  * * * edit-page-textarea: textarea
  */
 function startEditing() {
+    registerTextChangeListener();
+    intFetchPreview = setInterval(fetchPreview, 100);
     document.getElementById("wme-live-editor").style.display = "block";
+    document.getElementById("action-area").style.display = "none";
     var text = document.getElementById("edit-page-textarea").value;
     console.log("get original text");
     document.getElementById("wme-text-input").value = text;
@@ -83,4 +85,11 @@ function startEditing() {
 
 function stopEditing() {
     document.getElementById("wme-live-editor").style.display = "none";
+    window.clearInterval(intFetchPreview);
+}
+
+function fetchPreview() {
+    console.log("Fetching preview");
+    var innerHTML = document.getElementById("page-content").innerHTML;
+    document.getElementById("wme-display-panel").innerHTML = innerHTML;
 }
